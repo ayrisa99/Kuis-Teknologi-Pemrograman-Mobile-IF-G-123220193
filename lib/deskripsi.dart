@@ -56,6 +56,8 @@ class _DeskripsiState extends State<Deskripsi> {
               style: const TextStyle(fontSize: 22, fontWeight: FontWeight.bold),
             ),
             const SizedBox(height: 10),
+            Text(widget.title, style: const TextStyle(fontSize: 20)),
+            const SizedBox(height: 10),
             Text(widget.description, style: const TextStyle(fontSize: 16)),
             const SizedBox(height: 20),
             Row(
@@ -73,16 +75,16 @@ class _DeskripsiState extends State<Deskripsi> {
                     ),
                   ],
                 ),
-                ElevatedButton(
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.green,
-                  ),
-                  onPressed: () => Navigator.pop(context),
-                  child: const Text(
-                    'Kembali',
-                    style: TextStyle(color: Colors.white),
-                  ),
-                ),
+                // ElevatedButton(
+                //   style: ElevatedButton.styleFrom(
+                //     backgroundColor: Colors.green,
+                //   ),
+                //   onPressed: () => Navigator.pop(context),
+                //   child: const Text(
+                //     'Kembali',
+                //     style: TextStyle(color: Colors.white),
+                //   ),
+                // ),
               ],
             ),
           ],

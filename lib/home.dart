@@ -160,9 +160,8 @@ class _HomeState extends State<Home> {
                     style: TextStyle(fontWeight: FontWeight.bold),
                   ),
                   subtitle: Text(
-                    dummyNews[index].description,
-                    maxLines: 2,
-                    overflow: TextOverflow.ellipsis,
+                    "${dummyNews[index].likes}",
+                    style: TextStyle(color: Colors.black54),
                   ),
                   trailing: ElevatedButton(
                     style: ElevatedButton.styleFrom(
@@ -177,7 +176,7 @@ class _HomeState extends State<Home> {
                                 description: dummyNews[index].description,
                                 image: dummyNews[index].image,
                                 like: dummyNews[index].likes,
-                                title: '',
+                                title: dummyNews[index].title,
                               ),
                         ),
                       );
